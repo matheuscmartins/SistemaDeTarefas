@@ -20,11 +20,14 @@ namespace SistemasDeTarefas
             builder.Services.AddSwaggerGen();
 
             var connectionStringMysql = builder.Configuration.GetConnectionString("ConnectionMysql");
-            builder.Services.AddDbContext<TaskSistemDbContext>(x => x.UseMySql(
+            builder.Services.AddDbContext<TaskSistemDBContext>(x => x.UseMySql(
                 connectionStringMysql,
                 Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.31")
                 )
             );
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<ITaskRepository, TaskRepository>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

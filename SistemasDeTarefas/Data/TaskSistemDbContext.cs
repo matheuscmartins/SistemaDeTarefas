@@ -4,9 +4,9 @@ using SistemasDeTarefas.Models;
 
 namespace SistemasDeTarefas.Data
 {
-    public class TaskSistemDbContext : DbContext
+    public class TaskSistemDBContext : DbContext
     {
-        public TaskSistemDbContext(DbContextOptions<TaskSistemDbContext> options) : base(options)
+        public TaskSistemDBContext(DbContextOptions<TaskSistemDBContext> options) : base(options)
         {
 
         }

@@ -37,7 +37,7 @@ namespace SistemasDeTarefas.Controllers
         public async Task<ActionResult<UserModel>> UpdateUser([FromBody] UserModel userModel, int id)
         {
             userModel.Id = id;
-            UserModel userNew = await _userRepository.AddUser(userModel);
+            UserModel userNew = await _userRepository.UpdateUser(userModel,id);
             return Ok(userNew);
         }
         [HttpDelete("{id}")]

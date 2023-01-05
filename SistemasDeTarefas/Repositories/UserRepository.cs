@@ -7,8 +7,8 @@ namespace SistemasDeTarefas.Repositories
 {
     public class UserRepository : IUserRepository
     {
-        private readonly TaskSistemDbContext _dbContext;
-        public UserRepository(TaskSistemDbContext taskSistemDbContext)
+        private readonly TaskSistemDBContext _dbContext;
+        public UserRepository(TaskSistemDBContext taskSistemDbContext)
         {
             _dbContext = taskSistemDbContext;
         }

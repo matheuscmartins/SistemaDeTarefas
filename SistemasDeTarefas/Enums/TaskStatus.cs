@@ -5,10 +5,10 @@ namespace SistemasDeTarefas.Enums
     public enum TaskStatus
     {
         [Description(" To Do")]
-        ToDo=1,
+        ToDo = 1,
         [Description("Doing")]
-        Doing =2,
+        Doing = 2,
         [Description("Done")]
-        Done =3
+        Done = 3
     }
 }

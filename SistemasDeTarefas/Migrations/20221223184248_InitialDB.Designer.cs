@@ -9,7 +9,7 @@ using SistemasDeTarefas.Data;
 
 namespace SistemasDeTarefas.Migrations
 {
-    [DbContext(typeof(TaskSistemDbContext))]
+    [DbContext(typeof(TaskSistemDBContext))]
     [Migration("20221223184248_InitialDB")]
     partial class InitialDB
     {
